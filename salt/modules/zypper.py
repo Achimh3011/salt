@@ -964,8 +964,6 @@ def install(name=None,
     else:
         fromrepoopt = ''
     cmd_install = ['install', '--name', '--auto-agree-with-licenses']
-    if not refresh:
-        cmd_install.append('--no-refresh')
     if skip_verify:
         cmd_install.append('--no-gpg-checks')
     if downloadonly:
